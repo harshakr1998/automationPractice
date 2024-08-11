@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Automation testing practice page with various UI components.">
+        <meta name="keywords" content="automation testing, HTML, UI components">
+        <meta name="author" content="Harsha K R">
+        <title>Automation Testing Practice</title>
+        <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+      </head>          
+<body>
+  <header>
+    <h1>Automation Testing Practice Page</h1>
+    <h4>A comprehensive UI for most of the html components for Automation Testing using selenium.</h4>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#forms">Forms</a></li>
+      <li><a href="#tables">Tables</a></li>
+      <li><a href="#alerts">Alerts</a></li>
+      <li><a href="#iframes">Iframes</a></li>
+      <li><a href="#media">Media</a></li>
+      <li><a href="#lists">Lists</a></li>
+      <li><a href="#semantic">Semantic Elements</a></li>
+      <li><a href="#misc">Miscellaneous</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <section id="forms">
+      <h2>Form Elements</h2>
+      <form>
+        <div class="form-row">
+          	<div class="form-group">
+            	<label for="text-input">Text Input:</label>
+            	<input type="text" id="text-input" name="text-input">
+         	  </div>
+    
+          	<div class="form-group">
+            	<label for="email-input">Email Input:</label>
+           		<input type="email" id="email-input" name="email-input">
+          	</div>
+        </div>
+    
+        <div class="form-row">
+          	<div class="form-group">
+            	<label for="password-input">Password Input:</label>
+            	<input type="password" id="password-input" name="password-input">
+          	</div>
+          	<div class="form-group">
+            	<label for="textarea">Textarea:</label>
+            	<textarea id="textarea" name="textarea"></textarea>
+          	</div>
+        </div>
+    
+      <div class="form-row">
+          <div class="form-group">
+            <label for="dropdown">Dropdown:</label>
+            	<select id="dropdown" name="dropdown">
+              		<option value="option1">Java</option>
+              		<option value="option2">Python</option>
+              		<option value="option3">Selenium</option>
+            	</select>
+          </div>
+          <div class="form-group">
+            <label for="multi-select">Multi Select Dropdown:</label>
+            <div class="multi-select-dropdown" id="multi-select">
+              <div class="dropdown-selected">Select options</div>
+              <div class="dropdown-options">
+                <input type="text" class="dropdown-search" placeholder="Search...">
+                <label><input type="checkbox" value="option1"> Option 1</label>
+                <label><input type="checkbox" value="option2"> Option 2</label>
+                <label><input type="checkbox" value="option3"> Option 3</label>
+                <label><input type="checkbox" value="option4"> Option 4</label>
+                <label><input type="checkbox" value="option5"> Option 5</label>
+              </div>
+            </div>
+          </div>
+        </div>  
+        
+      <div class="form-row">
+            <label for="color-picker">Color Picker:</label>
+              <input type="color" id="color-picker" name="color-picker">
+
+            <label>Radio Buttons:</label>
+            <div class="radio-group">
+                <input type="radio" id="radio1" name="radio-group" value="1">
+                <label for="radio1">Option 1</label>
+                <input type="radio" id="radio2" name="radio-group" value="2">
+                <label for="radio2">Option 2</label>
+            </div>  
+        </div>
+              <label>Checkboxes:</label>
+              <div class="checkbox-group">
+                <input type="checkbox" id="checkbox1" name="checkbox-group" value="1">
+                <label for="checkbox1">Option 1</label>
+                <input type="checkbox" id="checkbox2" name="checkbox-group" value="2">
+                <label for="checkbox2">Option 2</label>
+              </div>
+      </div>
+          
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="datetime-local">Datetime Local:</label>
+          <input type="datetime-local" id="datetime-local" name="datetime-local" class="form-control">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="month">Month:</label>
+          <input type="month" id="month" name="month" class="form-control">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label for="week">Week:</label>
+          <input type="week" id="week" name="week" class="form-control">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time" class="form-control">
+        </div>
+      </div>
+    
+        <div class="form-row">
+          <div class="form-group">
+            <label for="file">File Upload:</label>
+            <input type="file" id="file" name="file">
+            <button type="submit">Submit</button>
+        </div>  
+      </form>
+    </section>
+    
+    <section id="tables">
+      <h2>Tables</h2>
+      <table id="pagination-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Doe</td>
+            <td>30</td>
+            <td>New York</td>
+          </tr>
+          <tr>
+            <td>Jane Smith</td>
+            <td>25</td>
+            <td>Los Angeles</td>
+          </tr>
+          <tr>
+            <td>Sam Johnson</td>
+            <td>40</td>
+            <td>Chicago</td>
+          </tr>
+          <!-- More rows for pagination -->
+        </tbody>
+      </table>
+      <div class="pagination">
+        <button class="page-link" data-page="1">1</button>
+        <button class="page-link" data-page="2">2</button>
+        <button class="page-link" data-page="3">3</button>
+        <!-- More page links as needed -->
+      </div>
+    </section>
+
+    <div class="container mt-4">
+      <!-- Page Alert -->
+      <div id="page-alert" class="alert alert-info alert-dismissible fade show" role="alert" style="display: none;">
+        <strong>Form Submitted!</strong> Your form has been successfully submitted.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+
+    <section id="alerts">
+      <h2>Alerts</h2>
+      <button onclick="showCustomAlert()">Show Page Alert</button>
+      <button onclick="showBrowserAlert()">Show Browser Alert</button>
+    </section>
+
+    <div class="alert-box" id="alertBox">
+      <div class="alert-content">
+          <h2>Page Alert</h2>
+          <p>Hi, you have reached page alert box!</p>
+          <button onclick="closeCustomAlert()">OK</button>
+      </div>
+  </div>
+
+    <section id="iframes">
+      <h2>Iframes</h2>
+      <iframe src="https://harshakr1998.github.io" width="1200" height="400" title="Example Iframe"></iframe>
+    </section>
+
+    <section id="media">
+      <h2>Media Elements</h2>
+      <img src="assets/images/Floating Robot.jpg" width="150" height="150"alt="Placeholder Image">
+      <audio controls>
+        <source src="assets/audio/sampleAudio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <video controls width="400">
+        <source src="assets/videos/sports-car.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+    </section>
+
+    <section id="lists">
+      <h2>Lists</h2>
+      <ul>
+        <li>Unordered List Item 1</li>
+        <li>Unordered List Item 2</li>
+        <li>Unordered List Item 3</li>
+      </ul>
+      <ol>
+        <li>Ordered List Item 1</li>
+        <li>Ordered List Item 2</li>
+        <li>Ordered List Item 3</li>
+      </ol>
+    </section>
+
+    <section id="semantic">
+      <h2>Semantic Elements</h2>
+      <article>
+        <h3>Article Title</h3>
+        <p>This is an article. It contains some content about a specific topic.</p>
+      </article>
+      <aside>
+        <h3>Aside Title</h3>
+        <p>This is an aside. It contains content that is tangentially related to the main content.</p>
+      </aside>
+    </section>
+
+    <section id="misc">
+      <h2>Miscellaneous Elements</h2>
+      <details>
+        <summary>Details Summary</summary>
+        <p>This is the details content that is hidden until the summary is clicked.</p>
+      </details>
+      <progress value="70" max="100">70%</progress>
+      <blockquote>
+        <p>This is a blockquote. It is used to quote text from another source.</p>
+      </blockquote>
+      <pre>
+        <code>
+          This is preformatted text.
+          It preserves whitespace and line breaks.
+        </code>
+      </pre>
+    </section>
+  </main>
+
+  <footer>
+    <h3>Automation Testing Practice</h3>
+    <span1>Made with</span1><span> &#10084;</span><span1> for Automation</span1>
+    
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
