@@ -1,279 +1,734 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ultimate Automation Testing Sandbox</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CDN -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
 
-        <meta property="og:title" content="Automation Testing Practice" />
-        <meta property="og:description" content="A Simple Automation Testing practice page with various UI components." />
-        <meta property="og:image" content="https://raw.githubusercontent.com/harshakr1998/automationPractice/main/assets/images/thumbnail.jpg" />
-        <meta property="og:url" content="https://harshakr1998.github.io/automationPractice/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Automation Testing Practice" />
-  
-        <meta name="description" content="Automation testing practice page with various UI components.">
-        <meta name="keywords" content="automation testing, HTML, UI components">
-        <meta name="author" content="Harsha K R">
-        <title>Automation Testing Practice</title>
-        <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/styles.css">
-      </head>          
-<body>
-  <header>
-    <h1>Automation Testing Practice Page</h1>
-    <h4>A comprehensive UI for most of the html components for Automation Testing using selenium.</h4>
-  </header>
-  
-  <nav>
-    <ul>
-      <li><a href="#forms">Forms</a></li>
-      <li><a href="#tables">Tables</a></li>
-      <li><a href="#alerts">Alerts</a></li>
-      <li><a href="#iframes">Iframes</a></li>
-      <li><a href="#media">Media</a></li>
-      <li><a href="#lists">Lists</a></li>
-      <li><a href="#semantic">Semantic Elements</a></li>
-      <li><a href="#misc">Miscellaneous</a></li>
-    </ul>
-  </nav>
-  
-  <main>
-    <section id="forms">
-      <h2>Form Elements</h2>
-      <form>
-        <div class="form-row">
-          	<div class="form-group">
-            	<label for="text-input">Text Input:</label>
-            	<input type="text" id="text-input" name="text-input">
-         	  </div>
-    
-          	<div class="form-group">
-            	<label for="email-input">Email Input:</label>
-           		<input type="email" id="email-input" name="email-input">
-          	</div>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Bootstrap Icons CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <header class="text-center py-3 bg-dark text-light">
+      <h1 class="fw-bold">Ultimate Automation Testing Sandbox</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav flex-wrap justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#forms">Forms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#buttons">Buttons</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#dropdowns">Dropdowns</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tables">Tables</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#modals">Modals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#alerts">Alerts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sliders">Sliders</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#date-pickers">Date Pickers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#file-uploads">File Uploads</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#progress-bars">Progress Bars</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#accordions">Accordions</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#tabs">Tabs</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tooltips">Tooltips</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#drag-drop">Drag & Drop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#dynamic-content">Dynamic Content</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#infinite-scroll">Infinite Scroll</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pagination">Pagination</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#popovers">Popovers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#carousel">Carousel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#advanced-form"
+                >Advanced Form Validation</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#iframes">iFrames</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cookies-storage"
+                >Cookies & Local Storage</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#keyboard-navigation"
+                >Keyboard Navigation</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#responsive-design"
+                >Responsive Design</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#animations">Animations</a>
+            </li>
+          </ul>
         </div>
-    
-        <div class="form-row">
-          	<div class="form-group">
-            	<label for="password-input">Password Input:</label>
-            	<input type="password" id="password-input" name="password-input">
-          	</div>
-          	<div class="form-group">
-            	<label for="textarea">Textarea:</label>
-            	<textarea id="textarea" name="textarea"></textarea>
-          	</div>
-        </div>
-    
-      <div class="form-row">
-          <div class="form-group">
-            <label for="dropdown">Dropdown:</label>
-            	<select id="dropdown" name="dropdown">
-              		<option value="option1">Java</option>
-              		<option value="option2">Python</option>
-              		<option value="option3">Selenium</option>
-            	</select>
+      </div>
+    </nav>
+
+    <main lass="container">
+      <!-- Forms Section -->
+      <section id="forms" class="container my-4">
+        <h2 class="text-center mb-4">Forms</h2>
+        <form id="sample-form" class="p-4 border rounded bg-light">
+          <!-- Name -->
+          <div class="mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+            />
           </div>
-          <div class="form-group">
-            <label for="multi-select">Multi Select Dropdown:</label>
-            <div class="multi-select-dropdown" id="multi-select">
-              <div class="dropdown-selected">Select options</div>
-              <div class="dropdown-options">
-                <input type="text" class="dropdown-search" placeholder="Search...">
-                <label><input type="checkbox" value="option1"> Option 1</label>
-                <label><input type="checkbox" value="option2"> Option 2</label>
-                <label><input type="checkbox" value="option3"> Option 3</label>
-                <label><input type="checkbox" value="option4"> Option 4</label>
-                <label><input type="checkbox" value="option5"> Option 5</label>
+
+          <!-- Email -->
+          <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+            />
+          </div>
+
+          <!-- Password -->
+          <div class="mb-3">
+            <label for="password" class="form-label">Password:</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+            />
+          </div>
+
+          <!-- Gender -->
+          <div class="mb-3">
+            <label class="form-label">Gender:</label>
+            <div>
+              <input
+                type="radio"
+                class="form-check-input"
+                id="male"
+                name="gender"
+                value="male"
+              />
+              <label for="male" class="form-check-label me-3">Male</label>
+
+              <input
+                type="radio"
+                class="form-check-input"
+                id="female"
+                name="gender"
+                value="female"
+              />
+              <label for="female" class="form-check-label">Female</label>
+            </div>
+          </div>
+
+          <!-- Hobbies -->
+          <div class="mb-3">
+            <label class="form-label">Hobbies:</label>
+            <div>
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="reading"
+                name="hobbies"
+                value="reading"
+              />
+              <label for="reading" class="form-check-label me-3">Reading</label>
+
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="sports"
+                name="hobbies"
+                value="sports"
+              />
+              <label for="sports" class="form-check-label me-3">Sports</label>
+
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="traveling"
+                name="hobbies"
+                value="traveling"
+              />
+              <label for="traveling" class="form-check-label">Traveling</label>
+            </div>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </form>
+      </section>
+
+      <!-- Buttons Section -->
+      <section id="buttons" class="container my-4 text-center">
+        <h2 class="mb-3">Functional Buttons</h2>
+
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <button id="alert-button" class="btn btn-primary">Show Alert</button>
+          <button id="toggle-button" class="btn btn-secondary">
+            Disable Me
+          </button>
+          <button id="delete-button" class="btn btn-danger">
+            Delete Element
+          </button>
+          <button id="log-button" class="btn btn-info">Log to Console</button>
+          <button id="submit-button" class="btn btn-success">
+            Submit Form
+          </button>
+          <button id="download-button" class="btn btn-warning">
+            Download File
+          </button>
+
+          <!-- Floating Action Button (FAB) -->
+          <button
+            id="fab-button"
+            class="btn btn-primary rounded-circle px-3 py-3"
+          >
+            <i class="bi bi-plus-lg"></i>
+          </button>
+        </div>
+
+        <!-- Deletable Element -->
+        <div id="delete-target" class="mt-4 p-3 bg-light border rounded">
+          <strong>Delete Me:</strong> This div will be removed when you click
+          the delete button.
+        </div>
+
+        <!-- Hidden Modal -->
+        <div id="custom-modal" class="modal fade" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Floating Action Button Clicked!</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p>This modal appears when you click the floating button.</p>
               </div>
             </div>
           </div>
-        </div>  
-        
-      <div class="form-row">
-            <label for="color-picker">Color Picker:</label>
-              <input type="color" id="color-picker" name="color-picker">
-
-            <label>Radio Buttons:</label>
-            <div class="radio-group">
-                <input type="radio" id="radio1" name="radio-group" value="1">
-                <label for="radio1">Option 1</label>
-                <input type="radio" id="radio2" name="radio-group" value="2">
-                <label for="radio2">Option 2</label>
-            </div>  
         </div>
-              <label>Checkboxes:</label>
-              <div class="checkbox-group">
-                <input type="checkbox" id="checkbox1" name="checkbox-group" value="1">
-                <label for="checkbox1">Option 1</label>
-                <input type="checkbox" id="checkbox2" name="checkbox-group" value="2">
-                <label for="checkbox2">Option 2</label>
+      </section>
+
+      <!-- Dropdowns Section -->
+      <section id="dropdowns" class="container my-4 text-center">
+        <h2>Dropdowns</h2>
+
+        <label for="cars" class="mb-2">Choose a car:</label>
+        <select id="cars" class="form-select mb-3" aria-label="Select a car">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+
+        <!-- Display Selected Car -->
+        <p id="selected-car" class="lead text-success"></p>
+      </section>
+
+      <!-- Tables Section -->
+      <section id="tables" class="container my-4 text-center">
+        <h2>Tables</h2>
+
+        <table id="sample-table" class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th id="name-header" style="cursor: pointer">Name</th>
+              <th id="age-header" style="cursor: pointer">Age</th>
+              <th id="city-header" style="cursor: pointer">City</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John Doe</td>
+              <td>28</td>
+              <td>New York</td>
+            </tr>
+            <tr>
+              <td>Jane Smith</td>
+              <td>34</td>
+              <td>Los Angeles</td>
+            </tr>
+            <tr>
+              <td>Sam Green</td>
+              <td>22</td>
+              <td>Chicago</td>
+            </tr>
+            <tr>
+              <td>Lisa White</td>
+              <td>27</td>
+              <td>Miami</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Modals Section -->
+      <section id="modal" class="container my-4 text-center">
+        <h2>Modals</h2>
+
+        <!-- Button to open the modal -->
+        <button id="open-modal" class="btn btn-primary">Open Modal</button>
+
+        <!-- Modal -->
+        <div
+          id="modal"
+          class="modal fade"
+          tabindex="-1"
+          aria-labelledby="modalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel">Modal Title</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
               </div>
-      </div>
-          
-      <div class="form-row">
-        <div class="col-md-6 mb-3">
-          <label for="datetime-local">Datetime Local:</label>
-          <input type="datetime-local" id="datetime-local" name="datetime-local" class="form-control">
+              <!-- Modal Body -->
+              <div class="modal-body">This is a modal window.</div>
+              <!-- Modal Footer -->
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Save changes
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-md-6 mb-3">
-          <label for="month">Month:</label>
-          <input type="month" id="month" name="month" class="form-control">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 mb-3">
-          <label for="week">Week:</label>
-          <input type="week" id="week" name="week" class="form-control">
-        </div>
-        <div class="col-md-6 mb-3">
-          <label for="time">Time:</label>
-          <input type="time" id="time" name="time" class="form-control">
-        </div>
-      </div>
-    
-        <div class="form-row">
-          <div class="form-group">
-            <label for="file">File Upload:</label>
-            <input type="file" id="file" name="file">
-            <button type="submit">Submit</button>
-        </div>  
-      </form>
-    </section>
-    
-    <section id="tables">
-      <h2>Tables</h2>
-      <table id="pagination-table">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Age</th>
-            <th>City</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>John Doe</td>
-            <td>30</td>
-            <td>New York</td>
-          </tr>
-          <tr>
-            <td>Jane Smith</td>
-            <td>25</td>
-            <td>Los Angeles</td>
-          </tr>
-          <tr>
-            <td>Sam Johnson</td>
-            <td>40</td>
-            <td>Chicago</td>
-          </tr>
-          <!-- More rows for pagination -->
-        </tbody>
-      </table>
-      <div class="pagination">
-        <button class="page-link" data-page="1">1</button>
-        <button class="page-link" data-page="2">2</button>
-        <button class="page-link" data-page="3">3</button>
-        <!-- More page links as needed -->
-      </div>
-    </section>
+      </section>
 
-    <div class="container mt-4">
-      <!-- Page Alert -->
-      <div id="page-alert" class="alert alert-info alert-dismissible fade show" role="alert" style="display: none;">
-        <strong>Form Submitted!</strong> Your form has been successfully submitted.
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+      <!-- Alerts Section -->
+      <section id="alerts" class="container my-4 text-center">
+        <h2>Alerts</h2>
+
+        <!-- Button to show an alert -->
+        <button id="alert-btn" class="btn btn-danger">Show Alert</button>
+
+        <!-- Button to show a confirm dialog -->
+        <button id="confirm-button" class="btn btn-warning">
+          Show Confirm
         </button>
-      </div>
-    </div>
 
-    <section id="alerts">
-      <h2>Alerts</h2>
-      <button onclick="showCustomAlert()">Show Page Alert</button>
-      <button onclick="showBrowserAlert()">Show Browser Alert</button>
-    </section>
+        <!-- Button to show a prompt dialog -->
+        <button id="prompt-button" class="btn btn-info">Show Prompt</button>
+      </section>
 
-    <div class="alert-box" id="alertBox">
-      <div class="alert-content">
-          <h2>Page Alert</h2>
-          <p>Hi, you have reached page alert box!</p>
-          <button onclick="closeCustomAlert()">OK</button>
-      </div>
-  </div>
+      <!-- Sliders Section -->
+      <section id="sliders" class="container my-4">
+        <h2>Sliders</h2>
+        <label for="range-slider">Range Slider:</label>
+        <input
+          type="range"
+          id="range-slider"
+          min="0"
+          max="100"
+          value="50"
+          class="form-range"
+        />
+        <span id="slider-value">50</span>
+      </section>
 
-    <section id="iframes">
-      <h2>Iframes</h2>
-      <iframe src="https://harshakr1998.github.io" width="1200" height="400" title="Example Iframe"></iframe>
-    </section>
+      <!-- Date Pickers Section -->
+      <section id="date-pickers" class="container my-4">
+        <h2>Date Pickers</h2>
+        <label for="date">Select a Date:</label>
+        <input type="date" id="date" class="form-control" />
+      </section>
 
-    <section id="media">
-      <h2>Media Elements</h2>
-      <img src="assets/images/Floating Robot.jpg" width="150" height="150"alt="Placeholder Image">
-      <audio controls>
-        <source src="assets/audio/sampleAudio.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-      <video controls width="400">
-        <source src="assets/videos/sports-car.mp4" type="video/mp4">
-        Your browser does not support the video element.
-      </video>
-    </section>
+      <!-- File Uploads Section -->
+      <section id="file-uploads" class="container my-4">
+        <h2>File Uploads</h2>
+        <label for="file-upload">Upload a File:</label>
+        <input type="file" id="file-upload" class="form-control" />
+      </section>
 
-    <section id="lists">
-      <h2>Lists</h2>
-      <ul>
-        <li>Unordered List Item 1</li>
-        <li>Unordered List Item 2</li>
-        <li>Unordered List Item 3</li>
-      </ul>
-      <ol>
-        <li>Ordered List Item 1</li>
-        <li>Ordered List Item 2</li>
-        <li>Ordered List Item 3</li>
-      </ol>
-    </section>
+      <!-- Progress Bars Section -->
+      <section id="progress-bars" class="container my-4">
+        <h2>Progress Bars</h2>
+        <progress
+          id="progress-bar"
+          value="50"
+          max="100"
+          class="form-control"
+        ></progress>
+        <span id="progress-value">50%</span>
+      </section>
 
-    <section id="semantic">
-      <h2>Semantic Elements</h2>
-      <article>
-        <h3>Article Title</h3>
-        <p>This is an article. It contains some content about a specific topic.</p>
-      </article>
-      <aside>
-        <h3>Aside Title</h3>
-        <p>This is an aside. It contains content that is tangentially related to the main content.</p>
-      </aside>
-    </section>
+      <!-- Accordions Section -->
+      <section id="accordions" class="container my-4">
+        <h2>Accordions</h2>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Section 1
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">Content for Section 1.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Section 2
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">Content for Section 2.</div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section id="misc">
-      <h2>Miscellaneous Elements</h2>
-      <details>
-        <summary>Details Summary</summary>
-        <p>This is the details content that is hidden until the summary is clicked.</p>
-      </details>
-      <progress value="70" max="100">70%</progress>
-      <blockquote>
-        <p>This is a blockquote. It is used to quote text from another source.</p>
-      </blockquote>
-      <pre>
-        <code>
-          This is preformatted text.
-          It preserves whitespace and line breaks.
-        </code>
-      </pre>
-    </section>
-  </main>
+      <!-- Tabs Section -->
+      <section id="tabs" class="container my-4">
+        <h2>Tabs</h2>
+        <div class="tabs">
+          <button class="tab-button active" data-tab="tab1">
+            <i class="fas fa-home"></i> Tab 1
+          </button>
+          <button class="tab-button" data-tab="tab2">
+            <i class="fas fa-info-circle"></i> Tab 2
+          </button>
+          <button class="tab-button" data-tab="tab3">
+            <i class="fas fa-cogs"></i> Tab 3
+          </button>
+        </div>
+        <div class="tab-content">
+          <div id="tab1" class="tab-pane active">
+            <p>Content for Tab 1.</p>
+          </div>
+          <div id="tab2" class="tab-pane">
+            <p>Content for Tab 2.</p>
+          </div>
+          <div id="tab3" class="tab-pane">
+            <p>Content for Tab 3.</p>
+          </div>
+        </div>
+      </section>
 
-  <footer>
-    <h3>Automation Testing Practice</h3>
-    <span1>Made with</span1><span> &#10084;</span><span1> for Automation</span1>
-    
-  </footer>
+      <!-- Tooltips Section -->
+      <section id="tooltips" class="container my-4">
+        <h2>Tooltips</h2>
+        <div class="tooltip-container">
+          <div class="tooltip">
+            Hover over me
+            <span class="tooltip-text">Tooltip text</span>
+          </div>
+          <div class="tooltip">
+            <button class="tooltip-btn">Hover over button</button>
+            <span class="tooltip-text">Button Tooltip</span>
+          </div>
+        </div>
+      </section>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="js/scripts.js"></script>
-</body>
+      <!-- Drag & Drop Section -->
+      <section id="drag-drop" class="container my-4">
+        <h2>Drag & Drop</h2>
+        <div id="drag-container">
+          <div id="drag-item" class="draggable" draggable="true">Drag me!</div>
+          <div id="drop-zone" class="drop-zone">Drop here</div>
+        </div>
+      </section>
+
+      <section id="dynamic-content" class="container my-4">
+        <h2>Dynamic Content</h2>
+        <button id="load-data">Load Data</button>
+        <div id="data-container"></div>
+      </section>
+
+      <section id="infinite-scroll" class="container my-4">
+        <h2>Infinite Scroll</h2>
+        <div id="scroll-content"></div>
+      </section>
+
+      <section id="pagination" class="container my-4">
+        <h2>Pagination</h2>
+        <div class="table-container">
+          <table id="paginated-table" class="table table-bordered table-hover">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Name</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div id="pagination-controls" class="pagination-controls">
+          <!-- Pagination buttons will be dynamically generated -->
+        </div>
+      </section>
+
+      <section id="popovers" class="container my-4">
+        <h2>Popovers</h2>
+        <button id="popover-button" class="btn btn-primary">
+          Click for Popover
+        </button>
+        <div id="popover-content" class="popover-content">
+          <p>This is the content of the popover.</p>
+        </div>
+      </section>
+
+      <section id="carousel" class="container my-4">
+        <h2>Carousel</h2>
+        <div class="carousel-container">
+          <div class="carousel-slide">
+            <img src="assets/images/image1.jpg" alt="Slide 1" />
+            <img src="assets/images/image2.jpg" alt="Slide 2" />
+            <img src="assets/images/image3.jpg" alt="Slide 3" />
+          </div>
+          <button class="carousel-prev">&#10094;</button>
+          <button class="carousel-next">&#10095;</button>
+        </div>
+      </section>
+
+      <section id="advanced-forms" class="container my-4">
+        <h2 class="text-center">Advanced Form Validation</h2>
+        <form id="advanced-form" class="p-4 border rounded shadow">
+          <div class="mb-3">
+            <label for="username" class="form-label">Username:</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              class="form-control"
+              pattern="[A-Za-z]{3,}"
+              required
+            />
+            <div class="form-text text-muted">Must be at least 3 letters.</div>
+            <div class="invalid-feedback">
+              Username must have at least 3 letters.
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="password" class="form-label">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-control"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              required
+            />
+            <div class="form-text text-muted">
+              Must contain at least one number, one uppercase and lowercase
+              letter, and be at least 8 characters long.
+            </div>
+            <div class="invalid-feedback">
+              Password must meet the required format.
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </form>
+      </section>
+
+      <section id="iframes" class="container my-4">
+        <h2 class="text-center">Iframes</h2>
+        <div class="iframe-container border rounded shadow p-3 text-center">
+          <iframe
+            src="iframe-content.html"
+            width="100%"
+            height="250"
+            class="rounded"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+
+      <section id="cookies-storage" class="container py-5">
+        <h2 class="text-center mb-4">Cookies & Local Storage</h2>
+        <div class="row justify-content-center">
+          <div class="row-md-6 d-flex flex-wrap justify-content-center gap-3">
+            <div class="gap-3">
+              <button id="set-cookie" class="btn btn-primary">
+                Set Cookie
+              </button>
+              <button id="get-cookie" class="btn btn-info">Get Cookie</button>
+              <button id="delete-cookie" class="btn btn-danger">
+                Delete Cookie
+              </button>
+              <button id="set-local-storage" class="btn btn-success">
+                Set Local Storage
+              </button>
+              <button id="get-local-storage" class="btn btn-warning">
+                Get Local Storage
+              </button>
+              <button id="delete-local-storage" class="btn btn-secondary">
+                Delete Local Storage
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          id="cookie-storage-output"
+          class="mt-4 p-3 border rounded bg-light"
+        ></div>
+      </section>
+
+      <section id="keyboard-navigation" class="container">
+        <h2>Keyboard Navigation</h2>
+        <div class="container py-5 mb-3 center">
+          <button id="focusable-button-1" class="btn btn-primary mb-3">
+            Button 1
+          </button>
+          <button id="focusable-button-2" class="btn btn-primary mb-3">
+            Button 2
+          </button>
+          <a href="#keyboard-navigation" class="btn btn-link">Focusable Link</a>
+        </div>
+      </section>
+
+      <section id="responsive-design" class="container py-5">
+        <h2 class="text-center mb-4">Responsive Design</h2>
+        <div class="responsive-grid">
+          <div>Item 1</div>
+          <div>Item 2</div>
+          <div>Item 3</div>
+        </div>
+      </section>
+
+      <section id="animations" class="container py-5">
+        <h2>Animations</h2>
+        <div id="animated-box"></div>
+        <button id="start-animation" class="btn btn-primary">
+          Start Animation
+        </button>
+        <button id="stop-animation" class="btn btn-danger">
+          Stop Animation
+        </button>
+      </section>
+    </main>
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2023 Automation Testing Sandbox</p>
+      <p>
+        <span>Created by Harsha K R</span>
+        <a
+          href="https://github.com/harshakr1998"
+          target="_blank"
+          title="GitHub"
+        >
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
